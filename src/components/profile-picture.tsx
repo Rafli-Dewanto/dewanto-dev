@@ -25,7 +25,7 @@ const ProfilePicture = () => {
         <motion.span
           transition={{ bounce: true, ease: "easeInOut", duration: 0.4 }}
           initial={{ y: 300, x: -300, opacity: 0 }}
-          animate={{ y: 0, x: 0, opacity: 1}}
+          animate={{ y: 0, x: 0, opacity: 1 }}
           className="absolute bottom-0 right-0 text-4xl"
         >
           👋

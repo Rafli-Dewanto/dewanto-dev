@@ -3,12 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import LottieAnim from "./lottie-anim";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import { VscGithub } from "react-icons/vsc"
+import { VscGithub } from "react-icons/vsc";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import ProfilePicture from "./profile-picture";
-
 
 export default function Intro() {
   return (
@@ -36,8 +34,8 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-col items-center justify-center gap-5 px-4 text-lg font-medium sm:flex-row">
-
+        className="flex flex-col items-center justify-center gap-5 px-4 text-lg font-medium sm:flex-row"
+      >
         {/* Contact me button */}
         <Link
           className="hover:border-[0.1rem] hover:scale-110 focus:scale-110 active:scale-105 group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 py-3 border-[#fd7c6d] bg-gray-900 px-7 flex items-center rounded-full text-white text-center justify-center hover:text-[#fd7c6d]"
@@ -77,9 +75,8 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-col items-center justify-center gap-2 px-4 mt-4 text-lg font-medium sm:flex-row">
-
-
+        className="flex flex-col items-center justify-center gap-2 px-4 mt-4 text-lg font-medium sm:flex-row"
+      >
         {/* LinkedIn Icon */}
         <Link
           className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white"
@@ -93,13 +90,11 @@ export default function Intro() {
         <Link
           target="_blank"
           href="https://github.com/Rafli-Dewanto"
-          className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white">
+          className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white"
+        >
           <VscGithub className="text-gray-700 group-hover:text-gray-950" />
         </Link>
-
       </motion.div>
-
-
     </section>
   );
 }
