@@ -11,7 +11,7 @@ import ProfilePicture from "./profile-picture";
 
 export default function Intro() {
   return (
-    <section className="flex flex-col items-center justify-center text-center">
+    <section id="home" className="flex flex-col items-center justify-center text-center scroll-mt-[100rem]">
       <ProfilePicture />
 
       {/* Main Title */}
