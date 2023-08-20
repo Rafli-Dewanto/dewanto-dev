@@ -3,8 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import LottieAnim from "./lottie-anim";
 import Link from "next/link";
-import { BsLinkedin } from "react-icons/bs";
-import { VscGithub } from "react-icons/vsc";
+import { TfiLinkedin } from "react-icons/tfi";
+import { FaGithubAlt } from "react-icons/fa";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import ProfilePicture from "./profile-picture";
 
@@ -83,7 +83,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/rd09"
           target="_blank"
         >
-          <BsLinkedin className="text-gray-700 group-hover:text-gray-950" />
+          <TfiLinkedin className="text-gray-700 group-hover:text-gray-950" />
         </Link>
 
         {/* GitHub Icon */}
@@ -92,7 +92,7 @@ export default function Intro() {
           href="https://github.com/Rafli-Dewanto"
           className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white"
         >
-          <VscGithub className="text-gray-700 group-hover:text-gray-950" />
+          <FaGithubAlt className="text-gray-700 group-hover:text-gray-950" />
         </Link>
       </motion.div>
     </section>
