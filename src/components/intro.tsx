@@ -5,6 +5,7 @@ import LottieAnim from "./lottie-anim";
 import Link from "next/link";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FaGithubAlt } from "react-icons/fa";
+import { PiShareNetworkDuotone } from "react-icons/pi";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import ProfilePicture from "./profile-picture";
 
@@ -63,14 +64,17 @@ export default function Intro() {
         </Link>
       </motion.div>
 
-      <motion.h3
-        transition={{ duration: 0.6 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="mt-12 font-medium text-center"
-      >
-        Let&apos;s Collaborate 🎉
-      </motion.h3>
+      <div className="flex justify-center items-center mt-12 gap-x-2">
+        <motion.h3
+          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="font-medium text-center"
+        >
+          Connect with me
+        </motion.h3>
+        <PiShareNetworkDuotone />
+      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
