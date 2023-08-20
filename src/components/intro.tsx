@@ -75,7 +75,7 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-col items-center justify-center gap-2 px-4 mt-4 text-lg font-medium sm:flex-row"
+        className="flex items-center justify-center gap-2 px-4 mt-4 text-lg font-medium sm:flex-row"
       >
         {/* LinkedIn Icon */}
         <Link
