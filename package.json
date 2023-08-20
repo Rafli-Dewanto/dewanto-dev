@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "pnpm exec prettier . --write"
   },
   "dependencies": {
     "@types/node": "20.5.1",
@@ -24,5 +25,9 @@
     "react-icons": "^4.10.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3"
   }
 }
