@@ -21,7 +21,7 @@ export default function ButtonSubmit() {
       type="submit"
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
+        <div className="w-5 h-5 border-b-2 border-white rounded-full animate-spin"></div>
       ) : (
         <>
           Submit

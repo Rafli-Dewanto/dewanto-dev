@@ -53,7 +53,7 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-col items-center justify-center gap-5 px-4 text-lg font-medium sm:flex-row"
+        className="flex flex-col items-center justify-center px-4 text-lg font-medium gap-5 sm:flex-row"
       >
         {/* Contact me button */}
         <Link
@@ -87,16 +87,18 @@ export default function Intro() {
         transition={{ duration: 0.6 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="flex justify-center items-center mt-12 gap-x-2"
+        className="flex items-center justify-center mt-12 gap-x-2"
       >
-        <h3 className="font-medium text-center">Connect with me</h3>
-        <PiShareNetworkDuotone />
+        <h3 className="font-medium text-center dark:text-gray-200">
+          Connect with me
+        </h3>
+        <PiShareNetworkDuotone className="dark:text-dark-text" />
       </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex items-center justify-center gap-2 px-4 mt-4 text-lg font-medium sm:flex-row"
+        className="flex items-center justify-center px-4 mt-4 text-lg font-medium gap-2 sm:flex-row"
       >
         {/* LinkedIn Icon */}
         <Link

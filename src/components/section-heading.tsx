@@ -6,7 +6,7 @@ export default function SectionHeading({
   children: React.ReactNode;
 }) {
   return (
-    <h2 className="text-3xl mb-8 font-medium capitalize text-center">
+    <h2 className="mb-8 text-3xl font-medium text-center capitalize dark:text-gray-200">
       {children}
     </h2>
   );

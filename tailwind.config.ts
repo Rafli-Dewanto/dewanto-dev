@@ -19,14 +19,15 @@ const config: Config = {
         "light-primary": "#fd7c6d",
         "light-secondary": "#fee4be",
         "light-accent": "#ec8f04",
-        "dark-text": "#ffffff", // (white)
-        "dark-bg": "#050002", //(very dark brown)
-        "dark-primary": "#fd7c6d", // (coral)
-        "dark-secondary": "#fee4be", // (light peach)
-        "dark-accent": "#ec8f04", //(dark orange)
+        "dark-text": "#ffffff",
+        "dark-bg": "#362424",
+        "dark-primary": "#fd7c6d",
+        "dark-secondary": "#fee4be",
+        "dark-accent": "#ec8f04",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;

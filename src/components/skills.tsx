@@ -30,7 +30,7 @@ export default function Skills() {
       ref={ref}
     >
       <SectionHeading>My Skills</SectionHeading>
-      <ul className="flex flex-wrap gap-4 justify-center items-center">
+      <ul className="flex flex-wrap items-center justify-center gap-4">
         {skillsData.map((skill, idx) => (
           <motion.li
             initial={"initial"}
