@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import LottieAnim from "./lottie-anim";
@@ -9,9 +10,19 @@ import { PiShareNetworkDuotone } from "react-icons/pi";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import ProfilePicture from "./profile-picture";
 import useSectionInView from "@/hooks/use-section-in-view";
+import type { SectionName } from "@/utils/types/section-name";
+import { useActiveSection } from "@/hooks/use-active-section";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
+  const { setActiveSection, setTimeOfLastClick } = useActiveSection();
+
+  function handleClick(sectionName: SectionName) {
+    return () => {
+      setActiveSection(sectionName);
+      setTimeOfLastClick(Date.now());
+    };
+  }
 
   return (
     <section
@@ -46,6 +57,7 @@ export default function Intro() {
       >
         {/* Contact me button */}
         <Link
+          onClick={handleClick("Contact")}
           className="hover:border-[0.1rem] hover:scale-110 focus:scale-110 active:scale-105 group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 py-3 border-[#fd7c6d] bg-gray-900 px-7 flex items-center rounded-full text-white text-center justify-center hover:text-[#fd7c6d]"
           href="#contact"
         >
