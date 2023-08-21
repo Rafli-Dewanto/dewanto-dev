@@ -1,19 +1,14 @@
 "use client";
-import React, { useRef } from "react";
+
+import React from "react";
 import SectionHeading from "./section-heading";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import SectionContainer from "./section-container";
-import { useActiveSection } from "@/hooks/use-active-section";
+import useSectionInView from "@/hooks/use-section-in-view";
 
 export default function About() {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref)
-  const { setActiveSection } = useActiveSection()
-
-  if (isInView) {
-    setActiveSection("About")
-  }
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.div
@@ -34,26 +29,26 @@ export default function About() {
             >
               Gunadarma University
             </Link>
-            , who thrives on the love for learning and the ever-evolving world of
-            technology.In a rapidly changing digital landscape, my fascination
-            with both web and Android development has led me on a captivating
-            voyage of discovery.
+            , who thrives on the love for learning and the ever-evolving world
+            of technology.In a rapidly changing digital landscape, my
+            fascination with both web and Android development has led me on a
+            captivating voyage of discovery.
           </p>
 
           <p className="mb-4">
-            The allure of crafting elegant and functional websites that seamlessly
-            integrate with the user&apos;s experience, as well as the art of
-            designing and building intuitive Android applications, has ignited a
-            fire within me. With every line of code I write and every challenge I
-            encounter, I am reminded of the limitless potential that technology
-            holds and the impact it can have on shaping the future.
+            The allure of crafting elegant and functional websites that
+            seamlessly integrate with the user&apos;s experience, as well as the
+            art of designing and building intuitive Android applications, has
+            ignited a fire within me. With every line of code I write and every
+            challenge I encounter, I am reminded of the limitless potential that
+            technology holds and the impact it can have on shaping the future.
           </p>
 
           <p className="mb-4">
-            <span className="italic">My favorite part of programming</span> is the
-            problem-solving aspect. I <span className="underline">love</span> the
-            feeling of finally figuring out a solution to a problem. My core stack
-            is{" "}
+            <span className="italic">My favorite part of programming</span> is
+            the problem-solving aspect. I{" "}
+            <span className="underline">love</span> the feeling of finally
+            figuring out a solution to a problem. My core stack is{" "}
             <span className="font-medium">
               <Link
                 target="_blank"
@@ -93,12 +88,13 @@ export default function About() {
             In addition to my technical expertise, I also possess strong soft
             skills, including{" "}
             <span className="font-medium">
-              discipline, hard work, critical thinking, team collaboration, and a
-              strong willingness to learn new things
+              discipline, hard work, critical thinking, team collaboration, and
+              a strong willingness to learn new things
             </span>
             . . I am always looking to learn new technologies. I am currently
-            looking for a <span className="font-medium">full-time position</span>{" "}
-            as a software developer.
+            looking for a{" "}
+            <span className="font-medium">full-time position</span> as a
+            software developer.
           </p>
         </SectionContainer>
       </div>

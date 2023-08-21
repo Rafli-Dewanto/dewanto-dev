@@ -8,10 +8,17 @@ import { FaGithubAlt } from "react-icons/fa";
 import { PiShareNetworkDuotone } from "react-icons/pi";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import ProfilePicture from "./profile-picture";
+import useSectionInView from "@/hooks/use-section-in-view";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home");
+
   return (
-    <section id="home" className="flex flex-col items-center justify-center text-center scroll-mt-[100rem]">
+    <section
+      ref={ref}
+      id="home"
+      className="flex flex-col items-center justify-center text-center scroll-mt-[100rem]"
+    >
       <ProfilePicture />
 
       {/* Main Title */}
@@ -64,17 +71,15 @@ export default function Intro() {
         </Link>
       </motion.div>
 
-      <div className="flex justify-center items-center mt-12 gap-x-2">
-        <motion.h3
-          transition={{ duration: 0.6 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="font-medium text-center"
-        >
-          Connect with me
-        </motion.h3>
+      <motion.div
+        transition={{ duration: 0.6 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="flex justify-center items-center mt-12 gap-x-2"
+      >
+        <h3 className="font-medium text-center">Connect with me</h3>
         <PiShareNetworkDuotone />
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
