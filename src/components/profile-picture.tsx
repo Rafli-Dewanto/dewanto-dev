@@ -1,8 +1,11 @@
+import useTheme from "@/hooks/use-theme";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const ProfilePicture = () => {
   const profilePic = "/profile-pic.png" as const;
+  const darkProfilePic = "/profile-pic-dark.png" as const;
+  const { theme } = useTheme()
 
   return (
     <div className="flex flex-col items-center justify-center px-5">
@@ -18,7 +21,7 @@ const ProfilePicture = () => {
             quality={95}
             width={250}
             height={250}
-            src={profilePic}
+            src={theme === 'dark' ? darkProfilePic : profilePic}
             alt="rafli dewanto"
           />
         </motion.div>

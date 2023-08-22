@@ -40,7 +40,7 @@ export default function Skills() {
             }}
             variants={fadeInAnimationVariants}
             custom={idx}
-            className="border text-lg text-gray-500 border-black/[0.1] bg-white rounded-full px-5 py-3"
+            className="border text-lg text-gray-500 border-black/[0.1] bg-white rounded-full px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={idx}
           >
             {skill}

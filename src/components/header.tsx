@@ -22,7 +22,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useOnClickOutside(burgerRef, toggleMenu);
+  useOnClickOutside(burgerRef, () => setIsMenuOpen(false));
 
   function handleClick(sectionName: SectionName) {
     return () => {
@@ -53,7 +53,7 @@ const Header = () => {
                 className={clsx(
                   `flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-100 dark:hover:text-gray-300`,
                   {
-                    "text-gray-950 dark:text-gray-200":
+                    "text-gray-950 dark:text-white":
                       activeSection === link.name,
                   },
                 )}
@@ -75,12 +75,11 @@ const Header = () => {
 
       {/* responsive */}
       <motion.nav
-        ref={burgerRef}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="fixed top-6 left-6 sm:hidden bg-dark-bg bg-opacity-5 p-4 rounded-3xl backdrop-blur-[0.8rem]"
       >
-        <div onClick={toggleMenu} className="p-2 cursor-pointer">
+        <div ref={burgerRef} onClick={toggleMenu} className="p-2 cursor-pointer">
           <FaBars size={24} />
         </div>
         <AnimatePresence>
@@ -93,6 +92,7 @@ const Header = () => {
             >
               {links.map((link) => (
                 <motion.li
+                  className="py-4 px-3"
                   key={link.hash}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

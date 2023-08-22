@@ -26,7 +26,7 @@ export default function About() {
             <Link
               target="_blank"
               href="https://gunadarma.ac.id/"
-              className="font-bold hover:underline hover:text-[#5B3189] cursor-pointer transition-all"
+              className="font-bold hover:underline hover:text-[#5B3189] dark:hover:text-[#aa74f1] cursor-pointer transition-all"
             >
               Gunadarma University
             </Link>

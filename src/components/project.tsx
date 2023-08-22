@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -11,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -29,21 +31,26 @@ export default function Project({
         opacity: opacityProgress,
       }}
     >
-      <section className="mx-4 bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold text-gray-950">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <section className="mx-4 bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20">
+        <a
+          target="_blank"
+          href={url}
+        >
+          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-dark-text">{title}</h3>
+            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/60">{description}</p>
+            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:bg-dark-primary"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </a>
 
         <Image
           width={300}

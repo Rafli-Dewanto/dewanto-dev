@@ -71,14 +71,14 @@ export default function Intro() {
         <Link
           passHref
           target="_blank"
-          className="hover:text-[#fd7c6d] hover:scale-110 group focus:scale-110 active:scale-105 text-center group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 py-3 hover:border-[0.1rem] border-[#fd7c6d] bg-slate-100 px-7 flex items-center justify-center rounded-full text-white"
+          className="hover:text-[#fd7c6d] hover:scale-110 group focus:scale-110 active:scale-105 text-center group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 py-3 hover:border-[0.1rem] border-[#fd7c6d] bg-slate-100 px-7 flex items-center justify-center rounded-full text-white dark:bg-opacity-30 dark:text-dark-text dark:hover:bg-opacity-30"
           href="/cv.pdf"
         >
-          <span className="font-medium text-center group-hover:text-slate-900 text-slate-900">
+          <span className="font-medium transition-all bg-none dark:bg-none text-center group-hover:text-slate-900 text-slate-900 dark:text-dark-text dark:group-hover:text-white">
             Download CV
           </span>
           <AiOutlineCloudDownload
-            className={`opacity-80 group-hover:text-[#fd7c6d] text-[#0F172A] group-hover:translate-y-[0.10rem] transition`}
+            className={`opacity-80 group-hover:text-[#fd7c6d] text-[#0F172A] group-hover:translate-y-[0.10rem] transition dark:text-white`}
           />
         </Link>
       </motion.div>
@@ -102,20 +102,20 @@ export default function Intro() {
       >
         {/* LinkedIn Icon */}
         <Link
-          className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white"
+          className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white dark:bg-opacity-30 dark:group-hover:border-white"
           href="https://www.linkedin.com/in/rd09"
           target="_blank"
         >
-          <TfiLinkedin className="text-gray-700 group-hover:text-gray-950" />
+          <TfiLinkedin className="text-gray-700 group-hover:text-gray-950 dark:text-white dark:group-hover:text-white " />
         </Link>
 
         {/* GitHub Icon */}
         <Link
-          target="_blank"
+          className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white dark:bg-opacity-30 dark:group-hover:border-white"
           href="https://github.com/Rafli-Dewanto"
-          className="group hover:text-[#fd7c6d] text-center hover:scale-110 focus:scale-110 active:scale-105 focus:border-light-primary active:border-light-primary outline-none group ease-in-out transition-all duration-150 shadow-md delay-75 gap-2 p-4 hover:border-[0.1rem] border-[#fd7c6d] bg-white flex items-center justify-center rounded-full text-white"
+          target="_blank"
         >
-          <FaGithubAlt className="text-gray-700 group-hover:text-gray-950" />
+          <FaGithubAlt className="text-gray-700 group-hover:text-gray-950 dark:text-white dark:group-hover:text-white " />
         </Link>
       </motion.div>
     </section>

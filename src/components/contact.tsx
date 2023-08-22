@@ -27,7 +27,7 @@ export default function Contact() {
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] px-12 sm:px-0 scroll-mt-28"
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="-mt-6 text-center text-gray-700">
+      <p className="-mt-6 text-center text-gray-700 dark:text-dark-text/60">
         Please contact me directly at&nbsp;
         <a href="mailto:dewantorafli@gmail.com" className="underline">
           dewantorafli@gmail.com&nbsp;

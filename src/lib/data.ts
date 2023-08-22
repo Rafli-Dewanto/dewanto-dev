@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 export const links = [
   {
@@ -32,52 +32,46 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Laboratory Assistant, Lembaga Pengembangan Universitas Gunadarma",
+    location: "Depok",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I work as laboratory assistant at my university to manage SAP software course and also help students who took Computer Network Technician schema held by BNSP for their exam by teaching them basic networking and ip addressing and as an IT support as well",
+    icon: React.createElement(BsPersonWorkspace),
+    date: "June 2023 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Lead Back-End Developer, Neotic.id",
+    location: "remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "As a server-side API developer, I used Node.js and Express to build the company website. I also led a team of developers, coordinating tasks, conducting code reviews, and fostering a culture of collaboration and learning.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "March 2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Glow On",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: "/corpcomment.png",
+      "Designing UI/UX Skincare E-Commerce Mobile App",
+    tags: ["Figma", "Photoshop"],
+    imageUrl: "/project-figma.JPG",
+    url: "https://www.figma.com/proto/AnVOmrMNb7hEtFHQuivfaC/glow-on?type=design&node-id=699-1743&t=WI1hct9Cyv7byNRw-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=699%3A1730&show-proto-sidebar=1"
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: "/rmtdev.png",
+    title: "VSGA Android App",
+    description: "Redesigned & adding new feature to an existing android app as a college group assignment to help us learn android and OOP concept",
+    tags: ["Java", "xml", "Mobile App Design", "lottie-android", "OOP"],
+    imageUrl: "/vsga-app.JPG",
+    url: "https://github.com/Rafli-Dewanto/project-android-pbo"
   },
   {
-    title: "Word Analytics",
+    title: "FlixTix",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/wordanalytics.png",
+      "A Movie Booking App.",
+    tags: ["React", "Framer motion", "Jotai"],
+    imageUrl: "/flixtix.JPG",
+    url: "https://github.com/Rafli-Dewanto/FlixTix"
   },
 ] as const;
 
@@ -90,6 +84,7 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Go",
+  "Java",
   "Git",
   "Tailwind",
   "Prisma",
