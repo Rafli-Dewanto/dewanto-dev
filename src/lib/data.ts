@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
 
 export const links = [

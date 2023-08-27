@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import useSectionInView from "@/hooks/use-section-in-view";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 mb-28 max-w-[36rem] sm:mb-40 text-center"
+      className="scroll-mt-28 mb-28 px-8 max-w-[36rem] sm:mb-40 text-center"
       ref={ref}
     >
       <SectionHeading>My Skills</SectionHeading>
