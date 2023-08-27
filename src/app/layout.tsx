@@ -1,11 +1,13 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
-import "./globals.css";
+import ThemeSwitch from "@/components/theme-switch";
+import AppContextProviders from "@/context/app.context";
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import AppContextProviders from "@/context/app.context";
+import "./globals.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +35,7 @@ export default function RootLayout({
           <Footer />
           <ThemeSwitch />
         </AppContextProviders>
+        <Analytics />
       </body>
     </html>
   );
